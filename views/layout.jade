@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+
+  include navigation
+  body
+      .well-lg
+        block contentA
+      .well-lg
+        block contentB
+          script(type='text/javascript' src='/javascripts/jquery-2.1.0.min.js')
+          script(type='text/javascript' src='/javascripts/bootstrap.min.js')
+          script(type='text/javascript' src='/javascripts/navbar.js')

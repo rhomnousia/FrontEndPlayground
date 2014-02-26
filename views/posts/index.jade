@@ -1,0 +1,8 @@
+extends ../layout
+
+block contentA
+    h1 Posts
+    dl#posts.well.well-lg
+        for post in posts
+            dt.h3.arrow.glyphicon-arrow-down= post.title
+            dd= post.body
